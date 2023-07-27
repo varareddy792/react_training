@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import DepandancyVariableComponent from './LifeCycleMethods/DepandancyVariableComponent';
+//import LifeCycleClassComponentMount from './LifeCycleMethods/LifeCycleClassComponentMount';
+//import LifeCycleClassComponentUpdate from './LifeCycleMethods/LifeCycleClassComponentUpdate';
+//import ParentComponentWithCondition from './ListAndRendering/ParentComponentWithCondition';
+//import ListRender from './ListAndRendering/ListRender';
+//import FormAndEventHandler from './EventHandling/FormAndEventHandler';
+//import Component1 from './ReusableCode/Component1';
+//import Component2 from './ReusableCode/Component2';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <LifeCycleClassComponentMount
+        //updateState="Update State" 
+      /> */}
+      {/* <LifeCycleClassComponentUpdate /> */}
+      {/* <ParentComponentWithCondition/> */}
+      {/* <ListRender/> */}
+      {/* <FormAndEventHandler/> */}
+      {/* <Component1 /> */}
+      {/* <Component2 /> */}
+      <DepandancyVariableComponent/>
     </div>
   );
 }
