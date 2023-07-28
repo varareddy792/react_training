@@ -1,4 +1,5 @@
 import './App.css';
+//import HookUseMemo from './ReactHooks/HookUseMemo';
 import DepandancyVariableComponent from './LifeCycleMethods/DepandancyVariableComponent';
 //import LifeCycleClassComponentMount from './LifeCycleMethods/LifeCycleClassComponentMount';
 //import LifeCycleClassComponentUpdate from './LifeCycleMethods/LifeCycleClassComponentUpdate';
@@ -13,7 +14,7 @@ function App() {
     <div>
       {/* <LifeCycleClassComponentMount
         //updateState="Update State" 
-      /> */}
+      />  */}
       {/* <LifeCycleClassComponentUpdate /> */}
       {/* <ParentComponentWithCondition/> */}
       {/* <ListRender/> */}
@@ -21,6 +22,7 @@ function App() {
       {/* <Component1 /> */}
       {/* <Component2 /> */}
       <DepandancyVariableComponent/>
+      {/* <HookUseMemo/> */}
     </div>
   );
 }

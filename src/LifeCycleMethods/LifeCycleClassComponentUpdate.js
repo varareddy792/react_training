@@ -9,19 +9,28 @@ export default class LifeCycleClassComponentUpdate extends Component {
     };
   }
 
-  UNSAFE_componentWillUpdate(nextProps, nextState) {
-    if (nextState.reactState !== this.state.reactState) {
-      console.log(`Count is about to update from ${this.state.reactState} to ${nextState.reactState}.`);
-    }
-  }
+  // UNSAFE_componentWillUpdate(nextProps, nextState) {
+  //   if (nextState.reactState !== this.state.reactState) {
+  //     console.log(`Count is about to update from ${this.state.reactState} to ${nextState.reactState}.`);
+  //   }
+  // }
 
   shouldComponentUpdate(nextProps, nextState) {
     alert("in shouldComponentUpdate")
     // Only re-render if the favoriteFood state has changed
     return this.state.reactState !== nextState.reactState;
   }
+
+  componentDidUpdate() {
+    alert("inside did update")
+  }
+  
   changeReactState = () => {
     this.setState({ reactState: 'Updated after shouldComponent is true' });
+  }
+
+  componentWillUnmount() {
+    alert("inside unmount")  
   }
 
   render() {
