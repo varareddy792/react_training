@@ -26,6 +26,12 @@ export default function ListRender() {
           <li>{item.country}</li>
         </ul>
       ))}
+
+<h1>filtered items</h1>
+      {myList.filter((item) => item.id === 3).map((item1) => <ul>
+        <li>{item1.name}</li>
+        <li>{item1.country}</li>
+</ul>)}
     </div>
   )
 }
