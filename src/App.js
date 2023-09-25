@@ -1,6 +1,6 @@
 import './App.css';
 //import HookUseMemo from './ReactHooks/HookUseMemo';
-import DepandancyVariableComponent from './LifeCycleMethods/DepandancyVariableComponent';
+//import DepandancyVariableComponent from './LifeCycleMethods/DepandancyVariableComponent';
 //import LifeCycleClassComponentMount from './LifeCycleMethods/LifeCycleClassComponentMount';
 //import LifeCycleClassComponentUpdate from './LifeCycleMethods/LifeCycleClassComponentUpdate';
 //import ParentComponentWithCondition from './ListAndRendering/ParentComponentWithCondition';
@@ -8,6 +8,7 @@ import DepandancyVariableComponent from './LifeCycleMethods/DepandancyVariableCo
 //import FormAndEventHandler from './EventHandling/FormAndEventHandler';
 //import Component1 from './ReusableCode/Component1';
 //import Component2 from './ReusableCode/Component2';
+import AddInput from './AddInput/AddInput';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
       {/* <FormAndEventHandler/> */}
       {/* <Component1 /> */}
       {/* <Component2 /> */}
-      <DepandancyVariableComponent/>
+      {/* <DepandancyVariableComponent/> */}
       {/* <HookUseMemo/> */}
+      <AddInput/>
     </div>
   );
 }
